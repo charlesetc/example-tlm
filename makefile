@@ -3,6 +3,7 @@ test: list_example list_parser
 	rebuild \
 		-cflags "-ppx ppx_relit" \
 		-pkg list_example \
+		-pkg relit_helper \
 		test/test.byte
 
 list_example:
@@ -19,9 +20,9 @@ list_parser:
 		-package ppx_tools.metaquot \
 		-package ocaml-migrate-parsetree \
 		-package relit_helper \
-		list_parser/list_parser.cmo \
-		list_parser/list_parser.cma \
-		list_parser/list_parser.cmx
+		list_parser/parser.cmo \
+		list_parser/lexer.cmo \
+		list_parser/list_parser.cmo
 
 install: list_example list_parser
 	ocamlfind install list_example \
