@@ -1,0 +1,13 @@
+(library
+  (name list_parser)
+  (public_name list_parser)
+  (preprocess (pps ppxlib.metaquot))
+  (libraries ocaml-migrate-parsetree
+             ppxlib.metaquot
+             relit_helper))
+
+(ocamllex
+  (modules lexer))
+
+(menhir
+  (modules parser))

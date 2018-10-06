@@ -1,0 +1,6 @@
+(library
+  (name list_example)
+  (preprocess (pps ppxlib.metaquot))
+  (libraries ocaml-migrate-parsetree
+             ppxlib.metaquot
+             relit_helper))

@@ -5,6 +5,6 @@ module String = {
   });
 };
 
-let l = String.$list `("hi","there","you")`;
+let l = String.$list `( "hi", "there", "you",)`;
 
 let () = String.concat("! ", l) |> print_endline;

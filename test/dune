@@ -1,0 +1,4 @@
+(executable
+  (name test)
+  (preprocess (staged_pps ppx_relit))
+  (libraries list_example))
