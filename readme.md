@@ -5,6 +5,18 @@
 
 Here's an example of a TLM (typed literal macro) implemented using Relit.
 
+To run it, first make sure you have OCaml version 4.07.0. Then:
+
+```
+opam install ppx_relit
+
+git clone https://github.com/charlesetc/example-tlm
+cd example-tlm
+
+make list_parser
+make test
+```
+
 ---
 
 ### Some highlights!
